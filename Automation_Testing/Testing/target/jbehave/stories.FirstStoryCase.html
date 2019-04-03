@@ -1,0 +1,16 @@
+<div class="story">
+<h1>Sample story</h1>
+<div class="path">stories/FirstStoryCase.story</div>
+<div class="scenario">
+<h2>Scenario: The scope of this test is to open google.</h2>
+<div class="step successful">Given I open a browser</div>
+<div class="step successful">When I enter <span class="step parameter">http://www.Google.com</span> and hit the enter key</div>
+<div class="step failed">Then <span class="step parameter">Gooogle</span> is displayed <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;Goo[o]gle&gt; but was:&lt;Goo[]gle&gt;</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: The scope of this test is to search on google</h2>
+<div class="step successful">Given http://www.Google.com is open</div>
+<div class="step successful">When I enter honda it will show search result</div>
+<div class="step successful">Then Honda will be selected</div>
+</div>
+</div>
